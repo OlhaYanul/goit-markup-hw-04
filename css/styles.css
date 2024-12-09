@@ -368,6 +368,7 @@ img {
 .footer-container {
     flex-direction: column;
     padding-left: 156px;
+    margin-right: 120px;
 }
 
 .box-footer .container {
@@ -401,8 +402,6 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-
-
 
 /*second section*/
 
@@ -473,8 +472,6 @@ img {
 .big-footer {
     display: flex;
     align-items: baseline;
-    gap: 120px;
-    margin-right: 120px;
 }
 
 .box-footer .icons {
@@ -511,6 +508,6 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #ffffff;
+    color: #FFFFFF;
     margin-bottom: 16px;
 }
