@@ -79,8 +79,8 @@ a {
     background-position: center;
     background-size: cover;
     max-width: 1440px;
+    margin-left: 39px;
 }
-
 
 
 .main-title {
@@ -384,27 +384,22 @@ img {
 
 /*header section*/
 
-.nav-element {
+.first-link {
     position: relative;
-    overflow: hidden;
+    color: #404bbf;
 }
 
-.active-link {
+.first-link::after {
     content: "";
+    width: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 48px;
+    left: 0;
+    bottom: -1px;
     height: 4px;
+    background-color: #404bbf;
     border-radius: 2px;
-    background: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-element:hover .active-link {
-    transform: translateY(0%);
 }
 
 
@@ -479,6 +474,7 @@ img {
     display: flex;
     align-items: baseline;
     gap: 120px;
+    margin-right: 120px;
 }
 
 .box-footer .icons {
@@ -501,12 +497,13 @@ img {
     justify-content: center;
 }
 
-.footer-social-container .icons-list .link:hover {
+.footer-social-container .icons-list .link:hover,
+.footer-social-container .icons-list .link:focus {
     background-color: #31d0aa;
 }
 
 .icons-list .icons-box {
-    fill: #f4f4f4;
+    fill: #f4f4fd;
 }
 
 .social-text {
@@ -514,6 +511,6 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 16px;
 }
