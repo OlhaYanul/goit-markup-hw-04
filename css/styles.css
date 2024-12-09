@@ -431,6 +431,15 @@ img {
     justify-content: center;
 }
 
+.icons-box {
+    fill: #f4f4fd;
+}
+
+.team-descr .icons-list .link:hover,
+.team-descr .icons-list .link:focus {
+    background-color: #404bbf;
+}
+
 /*forth section*/
 .additional-element {
     position: relative;
