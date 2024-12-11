@@ -46,10 +46,12 @@ a {
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
 .link:focus {
+    transform: color;
     color: #404bbf;
 }
 
@@ -62,12 +64,15 @@ a {
     letter-spacing: 0.02em;
     color: #434455;
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts:hover,
 .contacts:focus {
+    transform: color;
     color: #404bbf;
 }
+
 
 .main-box {
     padding: 188px 0;
@@ -101,19 +106,20 @@ a {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
-    background: #4d5ae5;
+    background-color: #4d5ae5;
     border-radius: 4px;
     padding: 16px 32px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: #4d5ae5;
     min-width: 169px;
     border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .click-main-box:hover,
 .click-main-box:focus {
-    background: #404bbf;
+    transform: background-color;
+    background-color: #404bbf;
 }
 
 .main-text {
@@ -429,9 +435,14 @@ img {
     fill: #f4f4fd;
 }
 
+.team-descr .icons-list .link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .team-descr .icons-list .link:hover,
 .team-descr .icons-list .link:focus {
     background-color: #404bbf;
+
 }
 
 /*forth section*/
@@ -463,9 +474,15 @@ img {
     transform: translateY(0%);
 }
 
+.portf-element {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .portf-element:hover {
     cursor: pointer;
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 /* footer section*/
@@ -492,11 +509,14 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .footer-social-container .icons-list .link:hover,
 .footer-social-container .icons-list .link:focus {
     background-color: #31d0aa;
+    transform: background-color;
 }
 
 .icons-list .icons-box {
